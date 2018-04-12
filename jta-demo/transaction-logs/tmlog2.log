@@ -1,0 +1,6 @@
+{"id":"txManager152274957309400002","wasCommitted":true,"participants":[{"uri":"txManager2","state":"COMMITTING","expires":1522749583052,"resourceName":"mysql/db02"}]}
+{"id":"txManager152274957309400002","wasCommitted":true,"participants":[{"uri":"txManager2","state":"TERMINATED","expires":1522749583061,"resourceName":"mysql/db02"}]}
+{"id":"txManager152274957284400001","wasCommitted":true,"participants":[{"uri":"txManager1","state":"COMMITTING","expires":1522749582794,"resourceName":"mysql/db01"}]}
+{"id":"txManager152274957284400001","wasCommitted":true,"participants":[{"uri":"txManager1","state":"TERMINATED","expires":1522749583096,"resourceName":"mysql/db01"}]}
+{"id":"txManager152274961878700004","wasCommitted":false,"participants":[{"uri":"txManager4","state":"TERMINATED","expires":1522749628801,"resourceName":"mysql/db02"}]}
+{"id":"txManager152274961878100003","wasCommitted":false,"participants":[{"uri":"txManager3","state":"TERMINATED","expires":1522749628809,"resourceName":"mysql/db01"}]}

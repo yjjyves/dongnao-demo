@@ -1,0 +1,38 @@
+server:
+  port: 8080
+
+spring:  
+    datasource:  
+        type: com.alibaba.druid.pool.xa.DruidXADataSource  
+        db1:
+            type: com.alibaba.druid.pool.xa.DruidXADataSource
+            initialize: true #指定初始化数据源，是否用data.sql来初始化，默认: true
+            name: db1
+            url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=utf-8
+            username: root
+            password: root
+        db2:
+            type: com.alibaba.druid.pool.xa.DruidXADataSource
+            initialize: true
+            name: db2
+            url: jdbc:mysql://127.0.0.1:3306/logdb?useUnicode=true&characterEncoding=utf-8
+            username: root
+            password: root
+
+    # jta相关参数配置   
+    jta:
+        log-dir:  f:/test
+        transaction-manager-id: txManager
+
+mybatis:
+    configuration:
+        mapUnderscoreToCamelCase: true
+        cache-enabled: true
+        log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    #mapper-locations: classpath:mapping/*.xml
+    
+pagehelper:
+    helperDialect: mysql
+    reasonable: true
+    supportMethodsArguments: true
+    params-count: countSql
